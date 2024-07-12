@@ -111,8 +111,6 @@ public class Task3 {
         driver.findElement(By.xpath("//a[text()='Open estimate summary']")).click();
         Thread.sleep(3000L);
 
-        //switching
-
         ArrayList<String> list=new ArrayList<>(driver.getWindowHandles());
         driver.switchTo().window(list.get(1));
 
